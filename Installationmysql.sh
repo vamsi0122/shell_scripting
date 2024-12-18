@@ -1,5 +1,6 @@
 DATE=$(date +%F)
-LOGFILE=/tmp/$0-$DATE
+script=$0
+LOGFILE=/tmp/$script-$DATE
 RED="\e[31m"
 G="\e[32m"
 N="\e[0m"
