@@ -28,4 +28,3 @@ Validation $? "Installing mysql"
 
 yum install postfix -y &>>$LOGFILE
 Validation $? "Installing postfix"
-#change
