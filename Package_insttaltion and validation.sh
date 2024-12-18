@@ -7,7 +7,7 @@ N="\e[0m"
 
 #functions
 Validation () {
-    if [$1 -e 0]
+    if [ $1 -e 0 ]
     then
        echo -e $2 is $G sucess $N
     else
@@ -17,7 +17,7 @@ Validation () {
 }
 
 USERID=$(id -u)
-if [$USERID -ne 0]
+if [ $USERID -ne 0 ]
 then
     echo"No root access to install switch to root"
     exit 1 #terminate the execution here.
